@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caculadora</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="script.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+  <div class="contenedor-general">
+
+    <div class="contenedor-calculadora">
+
+      <input type="text" id="resultado" readonly class="roundBorder"></input>
+
+      <div class="contenedor-botones">
+
+        <button id="1" onclick="agregar('1')" class="roundBorder">1</button>
+        <button id="2" onclick="agregar('2')" class="roundBorder">2</button>
+        <button id="3" onclick="agregar('3')" class="roundBorder">3</button>
+        <button id="suma" onclick="agregar('+')" class="roundBorder">+</button>
+        <button id="4" onclick="agregar('4')" class="roundBorder">4</button>
+        <button id="5" onclick="agregar('5')" class="roundBorder">5</button>
+        <button id="6" onclick="agregar('6')" class="roundBorder">6</button>
+        <button id="resta" onclick="agregar('-')" class="roundBorder">-</button>
+        <button id="7" onclick="agregar('7')" class="roundBorder">7</button>
+        <button id="8" onclick="agregar('8')" class="roundBorder">8</button>
+        <button id="9" onclick="agregar('9')" class="roundBorder">9</button>
+        <button id="multiplicacion" onclick="agregar('*')" class="roundBorder">*</button>
+        <button id="borrar" onclick="borrar()" class="roundBorder">C</button>
+        <button id="0" onclick="agregar('0')" class="roundBorder">0</button>
+        <button id="igual" onclick="calcular()" class="roundBorder">=</button>
+        <button id="division" onclick="agregar('/')" class="roundBorder">/</button>
+
+      </div>
+
+    </div>
+
+    <div class="contenedor-historial" id="historial">HISTORIAL</div>
+
+  </div>
+
+</body>
+
+</html>
