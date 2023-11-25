@@ -18,7 +18,9 @@ const manejarAgregar = (op, e) => {
   let result = '';
   if (i >= 0) {
     if (op[i] == '+' || op[i] == '-' || op[i] == '*' || op[i] == '/') {
-      result = op.slice(0, i) + e;
+      if (i > 0) {
+        result = op.slice(0, i) + e;
+      }
     }else{
       result = op + e;
     }

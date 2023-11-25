@@ -1,3 +1,14 @@
+:root {
+  --dark-primary: #1976d2;
+  --light-primary: #bbdefb;
+  --primary: #2196f3;
+  --text-icons: #fff;
+  --accent: #607d8b;
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --div-color: #bdbdbd;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,13 +22,14 @@ body{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: var(--light-primary);
 }
 
 .contenedor-general {
   width: 600px;
   display: flex;
   flex-wrap: wrap;
-  background-color: #aeaeae;
+  background-color: var(--primary);
 }
 
 .contenedor-calculadora{
@@ -33,6 +45,9 @@ body{
   padding: 10px;
   text-align: end;
   font-size: 2rem;
+  border: none;
+  outline: none;
+  color: #212121;
 }
 
 .contenedor-botones{
@@ -47,9 +62,12 @@ body{
   height: 70px;
   margin: 5px;
   cursor: pointer;
-  background-color: black;
+  background-color: var(--dark-primary);
   font-size: 2rem;
-  color: white;
+  color: var(--text-icons);
+  border: none;
+  outline: none;
+  font-weight: bold;
 }
 
 .roundBorder {
@@ -62,6 +80,8 @@ body{
 .contenedor-historial{
   width: 40%;
   padding: 0 15px 15px;
-  background-color: white;
+  background-color: var(--light-primary);
   font-size: 20px;
+  color: var(--primary-text);
+  font-weight: bold;
 }
